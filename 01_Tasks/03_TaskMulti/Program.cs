@@ -26,7 +26,7 @@ namespace _03_TaskMulti
             //Não faz nenhuma pausa pra esperar as tarefas terminarem
             //Task.WhenAll();
 
-            string[] enderecos = new string[] { "http://www.google.com.br", "http://www.uol.com.br", "http://www.g1.com.br" };
+            string[] enderecos = new string[] { "http://www.google.com.br", "http://www.uol.com.br", "http://www.globo.com" };
 
             //Vai criar um IEnumerable(especie de lista) com a task que vai retornar uma string
             var listaEnd = from end in enderecos select DownloadPagina(end);
